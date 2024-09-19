@@ -48,7 +48,7 @@ if api_key:
         
         # 입력 필드 리셋을 위해 키 변경
         st.session_state.input_key += 1
-        st.experimental_rerun()
+        st.rerun()
 
     # 대화 내용 표시
     for message in st.session_state.messages:
